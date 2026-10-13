@@ -1,0 +1,49 @@
+# =============================================
+# Campus Booking Platform — Root .gitignore
+# =============================================
+
+# ----- Environment & Secrets -----
+# NEVER commit .env files — they contain secrets like JWT keys and DB credentials
+.env
+*.env
+
+# ----- Python / Backend -----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.venv/
+env/
+pip-wheel-metadata/
+*.log
+
+# SQLite database files (contain real user data)
+*.db
+*.sqlite
+*.sqlite3
+
+# ----- Node.js / Frontend -----
+node_modules/
+frontend/dist/
+frontend/.cache/
+frontend/build/
+
+# ----- IDE / Editor -----
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# ----- Testing -----
+.pytest_cache/
+.coverage
+htmlcov/
